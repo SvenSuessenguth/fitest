@@ -5,6 +5,7 @@ import java.util.regex.Pattern;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.edge.EdgeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
@@ -15,6 +16,9 @@ public class WebFixture extends Fixture {
   WebDriver driver;
 
   public void startBrowser(String browser) {
+    if ("edge".equals(browser)) {
+      driver = new EdgeDriver();
+    }
     if ("firefox".equalsIgnoreCase(browser)) {
       driver = new FirefoxDriver();
     }

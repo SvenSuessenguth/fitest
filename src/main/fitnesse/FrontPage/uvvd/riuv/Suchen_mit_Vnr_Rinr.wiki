@@ -3,18 +3,29 @@ DisableTestHistory
 RecentChanges: no
 Test
 ---
-!define TEST_SYSTEM {slim} 
+!define TEST_SYSTEM {slim}
 !path target/classes
 !path target/lib/*.jar
 
+| import |
+| org.cc.fitnesse.fixture.web |
 
-|import                     |
-|org.cc.fitnesse.fixture.web|
+!6 UVVD aufrufen
+| script | Web Fixture |
+| start Browser | firefox |
+| open | https://dev.uvvd.system-a.local/ |
 
-|script       |Web Fixture                                |
-|start Browser|firefox                                       |
-|open         |https://dev.uvvd.system-a.local/                                            |
-|gib in       |vnr-suche-form:vnr-rinr              |den Wert |6065661,1500|ein|
-|klick        |vnr-suche-form:j_id_1x                                     |
-|pruefe ob    |Herr Sepp Blatter|vorhanden |
-|stop Browser                                             |
+!6 Vertragsuche
+!include -c .FrontPage.Uvvd.Ids.VertragSucheIds
+| script|
+| gib in | ${eingabe} | den Wert | 6065661,1900 | ein |
+| klick | ${suchen} |
+
+!6 UV Allgemein
+!include -c .FrontPage.Uvvd.Ids.UvAllgemeinIds
+| script|
+| pruefe ob | Herr Sepp Blatter | vorhanden |
+
+!6 UVVD beenden
+| script|
+| stop Browser |
