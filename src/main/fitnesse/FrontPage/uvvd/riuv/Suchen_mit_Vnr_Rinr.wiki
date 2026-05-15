@@ -1,4 +1,6 @@
 ---
+DisableTestHistory
+RecentChanges: no
 Test
 ---
 !define TEST_SYSTEM {slim} 
@@ -10,9 +12,9 @@ Test
 |org.cc.fitnesse.fixture.web|
 
 |script       |Web Fixture                                |
-|start Browser|edge                                       |
-|open                                                     |
-|gib in       |search:input_input              |Button|ein|
-|klick        |Button                                     |
-|pruefe ob    |Button is a navigation component|vorhanden |
+|start Browser|firefox                                       |
+|open         |https://dev.uvvd.system-a.local/                                            |
+|gib in       |vnr-suche-form:vnr-rinr              |den Wert |6065661,1500|ein|
+|klick        |vnr-suche-form:j_id_1x                                     |
+|pruefe ob    |Herr Sepp Blatter|vorhanden |
 |stop Browser                                             |

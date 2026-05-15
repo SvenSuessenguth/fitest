@@ -1,47 +1,62 @@
 package org.cc.fitnesse.fixture.web;
 
-import fit.Fixture;
+import java.time.Duration;
+import java.util.regex.Pattern;
+
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.edge.EdgeDriver;
+import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
-import java.time.Duration;
+import fit.Fixture;
 
 public class WebFixture extends Fixture {
-    WebDriver driver;
+  WebDriver driver;
 
-    public void startBrowser(String browser) {
-        if ("edge".equalsIgnoreCase(browser)) {
-            System.setProperty("webdriver.edge.driver", "d:\\dev\\projects\\fitest\\msedgedriver.exe");
-            driver = new EdgeDriver();
-            driver.manage().window().maximize();
-        }
+  public void startBrowser(String browser) {
+    if ("firefox".equalsIgnoreCase(browser)) {
+      driver = new FirefoxDriver();
     }
 
-    public void open() {
-        driver.get("https://showcase.primefaces.org/");
-        var wait = new WebDriverWait(driver, Duration.ofSeconds(10));
-        wait.until(ExpectedConditions.elementToBeClickable(By.id("homepage-intro")));
+    driver.manage().window().maximize();
+  }
+
+  public boolean open(String aHref) {
+    // Aus Fitnesse wird ein Element "<a href...>linktext</a> geliefert, obwohl im Wiki nur der URL-Text eingegeben
+    // wurde.
+    String url;
+    var hrefPattern = Pattern.compile("<a[\\s\\S]*?href=\"([^\"]+)\"[\\s\\S]*?>");
+    var hrefMatcher = hrefPattern.matcher(aHref);
+    if (!hrefMatcher.find()) {
+      return false;
     }
 
-    public void stopBrowser() {
-        driver.quit();
-    }
+    url = hrefMatcher.group(1);
+    driver.get(url);
 
-    public void gibInEin(String id, String input) {
-        var element = driver.findElement(By.id(id));
-        element.clear();
-        element.sendKeys(input);
-    }
+    return true;
+  }
 
-    public void klick(String text) {
-        var element = driver.findElement(By.linkText(text));
-        element.click();
-    }
+  public void stopBrowser() {
+    driver.quit();
+  }
 
-    public boolean pruefeObVorhanden(String text) {
-        return driver.getPageSource().contains(text);
-    }
+  public void gibInDenWertEin(String id, String input) {
+    var element = driver.findElement(By.id(id));
+    element.clear();
+    element.sendKeys(input);
+  }
+
+  public void klick(String id) {
+    var element = driver.findElement(By.id(id));
+    element.click();
+
+    var wait = new WebDriverWait(driver, Duration.ofSeconds(20));
+    wait.until(ExpectedConditions.elementToBeClickable(By.id("gevo-form")));
+  }
+
+  public boolean pruefeObVorhanden(String text) {
+    return driver.getPageSource().contains(text);
+  }
 }
