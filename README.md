@@ -1,0 +1,2 @@
+# fitest
+Fitnesse + Selenium + Maven
