@@ -1,4 +1,6 @@
 ---
+DisableTestHistory
+RecentChanges: no
 Suite
 ---
 !contents -R2 -g -p -f -h

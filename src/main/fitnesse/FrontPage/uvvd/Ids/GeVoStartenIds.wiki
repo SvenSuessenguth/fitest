@@ -1,0 +1,10 @@
+---
+DisableTestHistory
+RecentChanges: no
+Static
+---
+!define GeVo {gevo-form:j_id_3a:vn-beruf_input}
+!define GrundAuswahlbox {gevo-starten-form:grund_label}
+!define GrundAenderung {gevo-starten-form:grund_2}
+!define gueltigAb {gevo-starten-form:gueltig-ab_input}
+!define GeVoStarten {gevo-starten-form:gevo-starten}

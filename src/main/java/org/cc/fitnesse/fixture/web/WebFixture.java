@@ -47,7 +47,7 @@ public class WebFixture extends Fixture {
     driver.quit();
   }
 
-  public void gibInDenWertEin(String id, String input) {
+  public void gibInEin(String input, String id) {
     var element = driver.findElement(By.id(id));
     element.clear();
     element.sendKeys(input);

@@ -18,15 +18,16 @@ Test
 !6 Vertragsuche
 !include -c .FrontPage.Uvvd.Ids.VertragSucheIds
 | script|
-| gib in | ${eingabe} | den Wert | 6065661,1900 | ein |
+| gib |6065661,1900| in | ${eingabe} | ein |
 | klick | ${suchen} |
 
 !6 GeVo Änderung starten
+!include -c .FrontPage.Uvvd.Ids.GeVoStartenIds
 | script |
-| klick | gevo-starten-form:grund_label |
-| klick | gevo-starten-form:grund_2 | 
-| gib in | gevo-starten-form:gueltig-ab_input | den Wert | 01.02.2026 | ein |
-| klick | gevo-starten-form:gevo-starten |
+| klick | ${GrundAuswahlbox} |
+| klick | ${GrundAenderung} | 
+| gib | 01.02.2026| in | ${gueltigAb} | ein |
+| klick | ${GeVoStarten} |
 
 !6 UV Allgemein
 !include -c .FrontPage.Uvvd.Ids.UvAllgemeinIds
