@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+    <groupId>org.cc</groupId>
+    <artifactId>fitest</artifactId>
+    <version>1.0.0-SNAPSHOT</version>
+
+    <properties>
+        <fitnesse.version>20260313</fitnesse.version>
+        <selenium.version>4.44.0</selenium.version>
+
+        <maven.compiler.source>25</maven.compiler.source>
+        <maven.compiler.target>25</maven.compiler.target>
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+    </properties>
+
+    <dependencies>
+        <dependency>
+            <groupId>org.fitnesse</groupId>
+            <artifactId>fitnesse</artifactId>
+            <version>${fitnesse.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>org.seleniumhq.selenium</groupId>
+            <artifactId>selenium-java</artifactId>
+            <version>${selenium.version}</version>
+        </dependency>
+    </dependencies>
+
+    <build>
+        <plugins>
+            <plugin>
+                <artifactId>maven-dependency-plugin</artifactId>
+                <executions>
+                    <execution>
+                        <phase>pre-integration-test</phase>
+                        <goals>
+                            <goal>copy-dependencies</goal>
+                        </goals>
+                        <configuration>
+                            <outputDirectory>${project.build.directory}/lib</outputDirectory>
+                        </configuration>
+                    </execution>
+                </executions>
+            </plugin>
+            <plugin>
+                <artifactId>maven-antrun-plugin</artifactId>
+                <version>3.1.0</version>
+                <executions>
+                    <execution>
+                        <id>start-fitnesse</id>
+                        <phase>pre-integration-test</phase>
+                        <configuration>
+                            <target>
+                                <path id="fitnesse.classpath">
+                                    <pathelement location="${basedir}/target/classes"/>
+                                    <fileset dir="${basedir}/target/lib">
+                                        <include name="*.jar"/>
+                                    </fileset>
+                                </path>
+
+                                <java classname="fitnesseMain.FitNesseMain" fork="true">
+                                    <arg line="-p 8080"/>
+                                    <arg line="-d ."/>
+                                    <arg line="-r ./src/main/fitnesse"/>
+                                    <arg line="-e 0"/>
+                                    <arg line="-f ${basedir}/src/main/resources/plugins.properties"/>
+                                    <jvmarg value="-agentlib:jdwp=transport=dt_socket,server=y,suspend=n,address=5123" />
+                                    <classpath refid="fitnesse.classpath"/>
+                                </java>
+                            </target>
+                        </configuration>
+                        <goals>
+                            <goal>run</goal>
+                        </goals>
+                    </execution>
+                </executions>
+            </plugin>
+        </plugins>
+    </build>
+</project>

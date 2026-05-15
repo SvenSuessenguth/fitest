@@ -1,0 +1,18 @@
+---
+Test
+---
+!define TEST_SYSTEM {slim} 
+!path target/classes
+!path target/lib/*.jar
+
+
+|import                     |
+|org.cc.fitnesse.fixture.web|
+
+|script       |Web Fixture                                |
+|start Browser|edge                                       |
+|open                                                     |
+|gib in       |search:input_input              |Button|ein|
+|klick        |Button                                     |
+|pruefe ob    |Button is a navigation component|vorhanden |
+|stop Browser                                             |

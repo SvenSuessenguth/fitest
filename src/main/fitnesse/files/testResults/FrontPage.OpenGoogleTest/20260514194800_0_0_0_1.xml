@@ -1,0 +1,441 @@
+<?xml version="1.0"?>
+<testResults>
+  <FitNesseVersion>v20260313</FitNesseVersion>
+  <rootPath>FrontPage.OpenGoogleTest</rootPath>
+  <result>
+    <counts>
+      <right>0</right>
+      <wrong>0</wrong>
+      <ignores>0</ignores>
+      <exceptions>3</exceptions>
+    </counts>
+    <date>2026-05-14T19:48:01+02:00</date>
+    <runTimeInMillis>3712</runTimeInMillis>
+    <content>&lt;br/&gt;&lt;span class="meta"&gt;variable defined: TEST_SYSTEM=slim&lt;/span&gt;
+ &lt;br/&gt;&lt;span class="meta"&gt;classpath: target/classes&lt;/span&gt;&lt;br/&gt;&lt;span class="meta"&gt;classpath: target/lib/*.jar&lt;/span&gt;&lt;br/&gt;&lt;br/&gt;&lt;br/&gt;&lt;table&gt;
+	&lt;tr class="slimRowTitle"&gt;
+		&lt;td&gt;import&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr class="slimRowColor0"&gt;
+		&lt;td&gt;&lt;span class="pass"&gt;org.cc.fitnesse.fixture.web&lt;/span&gt;&lt;/td&gt;
+	&lt;/tr&gt;
+&lt;/table&gt;
+&lt;br/&gt;&lt;table&gt;
+	&lt;tr class="slimRowTitle"&gt;
+		&lt;td&gt;script&lt;/td&gt;
+		&lt;td colspan="4"&gt;&lt;span class="pass"&gt;Web Fixture&lt;/span&gt;&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr class="slimRowColor0"&gt;
+		&lt;td&gt;start Browser&lt;/td&gt;
+		&lt;td colspan="4"&gt;edge&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr class="slimRowColor4"&gt;
+		&lt;td colspan="5"&gt;open&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr class="slimRowColor6"&gt;
+		&lt;td&gt;gib &lt;span class="error"&gt;No Method gibInDemFeldEin[2] in class org.cc.fitnesse.fixture.web.WebFixture.
+ Available methods:
+ClearSymbols() -&amp;gt; void
+callParseMethod(java.lang.Class, java.lang.String) -&amp;gt; class java.lang.Object
+camel(java.lang.String) -&amp;gt; class java.lang.String
+check(fit.Parse, fit.TypeAdapter) -&amp;gt; void
+counts() -&amp;gt; class java.lang.String
+doCell(fit.Parse, int) -&amp;gt; void
+doCells(fit.Parse) -&amp;gt; void
+doRow(fit.Parse) -&amp;gt; void
+doRows(fit.Parse) -&amp;gt; void
+doTable(fit.Parse) -&amp;gt; void
+doTables(fit.Parse) -&amp;gt; void
+equals(java.lang.Object) -&amp;gt; boolean
+escape(java.lang.String) -&amp;gt; class java.lang.String
+escape(java.lang.String, char, java.lang.String) -&amp;gt; class java.lang.String
+exception(fit.Parse, java.lang.Throwable) -&amp;gt; void
+getArgs() -&amp;gt; class [Ljava.lang.String;
+getArgsForTable(fit.Parse) -&amp;gt; void
+getClass() -&amp;gt; class java.lang.Class
+getSymbol(java.lang.String) -&amp;gt; class java.lang.Object
+gibInEin(java.lang.String, java.lang.String) -&amp;gt; void
+gray(java.lang.String) -&amp;gt; class java.lang.String
+handleBlankCell(fit.Parse, fit.TypeAdapter) -&amp;gt; void
+hasParseMethod(java.lang.Class) -&amp;gt; boolean
+hasSymbol(java.lang.String) -&amp;gt; boolean
+hashCode() -&amp;gt; int
+ignore(fit.Parse) -&amp;gt; void
+isFriendlyException(java.lang.Throwable) -&amp;gt; boolean
+klickDenButton(java.lang.String) -&amp;gt; void
+label(java.lang.String) -&amp;gt; class java.lang.String
+loadFixture(java.lang.String) -&amp;gt; class fit.Fixture
+notify() -&amp;gt; void
+notifyAll() -&amp;gt; void
+open() -&amp;gt; void
+parse(java.lang.String, java.lang.Class) -&amp;gt; class java.lang.Object
+pruefeObTextVorhanden(java.lang.String) -&amp;gt; boolean
+right(fit.Parse) -&amp;gt; void
+setForcedAbort(boolean) -&amp;gt; void
+setSymbol(java.lang.String, java.lang.Object) -&amp;gt; void
+startBrowser(java.lang.String) -&amp;gt; void
+stopBrowser() -&amp;gt; void
+toString() -&amp;gt; class java.lang.String
+wait() -&amp;gt; void
+wait(long) -&amp;gt; void
+wait(long, int) -&amp;gt; void
+wrong(fit.Parse) -&amp;gt; void
+wrong(fit.Parse, java.lang.String) -&amp;gt; void&lt;/span&gt;&lt;/td&gt;
+		&lt;td&gt;Walther Suessenguth&lt;/td&gt;
+		&lt;td&gt;in dem Feld&lt;/td&gt;
+		&lt;td&gt;cdx-text-input__input&lt;/td&gt;
+		&lt;td&gt;ein&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr class="slimRowColor5"&gt;
+		&lt;td&gt;klick auf den Button &lt;span class="error"&gt;No Method klickAufDenButton[1] in class org.cc.fitnesse.fixture.web.WebFixture.
+ Available methods:
+ClearSymbols() -&amp;gt; void
+callParseMethod(java.lang.Class, java.lang.String) -&amp;gt; class java.lang.Object
+camel(java.lang.String) -&amp;gt; class java.lang.String
+check(fit.Parse, fit.TypeAdapter) -&amp;gt; void
+counts() -&amp;gt; class java.lang.String
+doCell(fit.Parse, int) -&amp;gt; void
+doCells(fit.Parse) -&amp;gt; void
+doRow(fit.Parse) -&amp;gt; void
+doRows(fit.Parse) -&amp;gt; void
+doTable(fit.Parse) -&amp;gt; void
+doTables(fit.Parse) -&amp;gt; void
+equals(java.lang.Object) -&amp;gt; boolean
+escape(java.lang.String) -&amp;gt; class java.lang.String
+escape(java.lang.String, char, java.lang.String) -&amp;gt; class java.lang.String
+exception(fit.Parse, java.lang.Throwable) -&amp;gt; void
+getArgs() -&amp;gt; class [Ljava.lang.String;
+getArgsForTable(fit.Parse) -&amp;gt; void
+getClass() -&amp;gt; class java.lang.Class
+getSymbol(java.lang.String) -&amp;gt; class java.lang.Object
+gibInEin(java.lang.String, java.lang.String) -&amp;gt; void
+gray(java.lang.String) -&amp;gt; class java.lang.String
+handleBlankCell(fit.Parse, fit.TypeAdapter) -&amp;gt; void
+hasParseMethod(java.lang.Class) -&amp;gt; boolean
+hasSymbol(java.lang.String) -&amp;gt; boolean
+hashCode() -&amp;gt; int
+ignore(fit.Parse) -&amp;gt; void
+isFriendlyException(java.lang.Throwable) -&amp;gt; boolean
+klickDenButton(java.lang.String) -&amp;gt; void
+label(java.lang.String) -&amp;gt; class java.lang.String
+loadFixture(java.lang.String) -&amp;gt; class fit.Fixture
+notify() -&amp;gt; void
+notifyAll() -&amp;gt; void
+open() -&amp;gt; void
+parse(java.lang.String, java.lang.Class) -&amp;gt; class java.lang.Object
+pruefeObTextVorhanden(java.lang.String) -&amp;gt; boolean
+right(fit.Parse) -&amp;gt; void
+setForcedAbort(boolean) -&amp;gt; void
+setSymbol(java.lang.String, java.lang.Object) -&amp;gt; void
+startBrowser(java.lang.String) -&amp;gt; void
+stopBrowser() -&amp;gt; void
+toString() -&amp;gt; class java.lang.String
+wait() -&amp;gt; void
+wait(long) -&amp;gt; void
+wait(long, int) -&amp;gt; void
+wrong(fit.Parse) -&amp;gt; void
+wrong(fit.Parse, java.lang.String) -&amp;gt; void&lt;/span&gt;&lt;/td&gt;
+		&lt;td colspan="4"&gt;suchen&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr class="slimRowColor8"&gt;
+		&lt;td&gt;pruefe ob &lt;span class="error"&gt;No Method pruefeObAufDerSeiteSteht[1] in class org.cc.fitnesse.fixture.web.WebFixture.
+ Available methods:
+ClearSymbols() -&amp;gt; void
+callParseMethod(java.lang.Class, java.lang.String) -&amp;gt; class java.lang.Object
+camel(java.lang.String) -&amp;gt; class java.lang.String
+check(fit.Parse, fit.TypeAdapter) -&amp;gt; void
+counts() -&amp;gt; class java.lang.String
+doCell(fit.Parse, int) -&amp;gt; void
+doCells(fit.Parse) -&amp;gt; void
+doRow(fit.Parse) -&amp;gt; void
+doRows(fit.Parse) -&amp;gt; void
+doTable(fit.Parse) -&amp;gt; void
+doTables(fit.Parse) -&amp;gt; void
+equals(java.lang.Object) -&amp;gt; boolean
+escape(java.lang.String) -&amp;gt; class java.lang.String
+escape(java.lang.String, char, java.lang.String) -&amp;gt; class java.lang.String
+exception(fit.Parse, java.lang.Throwable) -&amp;gt; void
+getArgs() -&amp;gt; class [Ljava.lang.String;
+getArgsForTable(fit.Parse) -&amp;gt; void
+getClass() -&amp;gt; class java.lang.Class
+getSymbol(java.lang.String) -&amp;gt; class java.lang.Object
+gibInEin(java.lang.String, java.lang.String) -&amp;gt; void
+gray(java.lang.String) -&amp;gt; class java.lang.String
+handleBlankCell(fit.Parse, fit.TypeAdapter) -&amp;gt; void
+hasParseMethod(java.lang.Class) -&amp;gt; boolean
+hasSymbol(java.lang.String) -&amp;gt; boolean
+hashCode() -&amp;gt; int
+ignore(fit.Parse) -&amp;gt; void
+isFriendlyException(java.lang.Throwable) -&amp;gt; boolean
+klickDenButton(java.lang.String) -&amp;gt; void
+label(java.lang.String) -&amp;gt; class java.lang.String
+loadFixture(java.lang.String) -&amp;gt; class fit.Fixture
+notify() -&amp;gt; void
+notifyAll() -&amp;gt; void
+open() -&amp;gt; void
+parse(java.lang.String, java.lang.Class) -&amp;gt; class java.lang.Object
+pruefeObTextVorhanden(java.lang.String) -&amp;gt; boolean
+right(fit.Parse) -&amp;gt; void
+setForcedAbort(boolean) -&amp;gt; void
+setSymbol(java.lang.String, java.lang.Object) -&amp;gt; void
+startBrowser(java.lang.String) -&amp;gt; void
+stopBrowser() -&amp;gt; void
+toString() -&amp;gt; class java.lang.String
+wait() -&amp;gt; void
+wait(long) -&amp;gt; void
+wait(long, int) -&amp;gt; void
+wrong(fit.Parse) -&amp;gt; void
+wrong(fit.Parse, java.lang.String) -&amp;gt; void&lt;/span&gt;&lt;/td&gt;
+		&lt;td&gt;Leben und Wirken&lt;/td&gt;
+		&lt;td colspan="3"&gt;auf der Seite steht&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr class="slimRowColor6"&gt;
+		&lt;td colspan="5"&gt;stop Browser&lt;/td&gt;
+	&lt;/tr&gt;
+&lt;/table&gt;
+</content>
+    <relativePageName>OpenGoogleTest</relativePageName>
+    <instructions>
+      <instructionResult>
+        <instruction>{id='import_0_0', instruction='import', path='org.cc.fitnesse.fixture.web'}</instruction>
+        <slimResult>pass(org.cc.fitnesse.fixture.web)</slimResult>
+        <expectation>
+          <status>pass</status>
+          <instructionId>import_0_0</instructionId>
+          <col>0</col>
+          <row>1</row>
+          <type>ImportExpectation</type>
+          <evaluationMessage>org.cc.fitnesse.fixture.web</evaluationMessage>
+        </expectation>
+      </instructionResult>
+      <instructionResult>
+        <instruction>{id='scriptTable_1_0', instruction='make', instanceName='scriptTableActor', className='WebFixture', args=[]}</instruction>
+        <slimResult>pass(Web Fixture)</slimResult>
+        <expectation>
+          <status>pass</status>
+          <instructionId>scriptTable_1_0</instructionId>
+          <col>1</col>
+          <row>0</row>
+          <type>ConstructionExpectation</type>
+          <evaluationMessage>Web Fixture</evaluationMessage>
+        </expectation>
+      </instructionResult>
+      <instructionResult>
+        <instruction>{id='scriptTable_1_1', instruction='call', instanceName='scriptTableActor', methodName='startBrowser', args=[edge]}</instruction>
+        <slimResult></slimResult>
+        <expectation>
+          <instructionId>scriptTable_1_1</instructionId>
+          <col>0</col>
+          <row>1</row>
+          <type>ScriptActionExpectation</type>
+        </expectation>
+      </instructionResult>
+      <instructionResult>
+        <instruction>{id='scriptTable_1_2', instruction='call', instanceName='scriptTableActor', methodName='open', args=[]}</instruction>
+        <slimResult></slimResult>
+        <expectation>
+          <instructionId>scriptTable_1_2</instructionId>
+          <col>0</col>
+          <row>2</row>
+          <type>ScriptActionExpectation</type>
+        </expectation>
+      </instructionResult>
+      <instructionResult>
+        <instruction>{id='scriptTable_1_3', instruction='call', instanceName='scriptTableActor', methodName='gibInDemFeldEin', args=[Walther Suessenguth, cdx-text-input__input]}</instruction>
+        <slimResult></slimResult>
+        <expectation>
+          <status>error</status>
+          <instructionId>scriptTable_1_3</instructionId>
+          <type>ScriptActionExpectation</type>
+          <evaluationMessage>No Method gibInDemFeldEin[2] in class org.cc.fitnesse.fixture.web.WebFixture.
+ Available methods:
+ClearSymbols() -&gt; void
+callParseMethod(java.lang.Class, java.lang.String) -&gt; class java.lang.Object
+camel(java.lang.String) -&gt; class java.lang.String
+check(fit.Parse, fit.TypeAdapter) -&gt; void
+counts() -&gt; class java.lang.String
+doCell(fit.Parse, int) -&gt; void
+doCells(fit.Parse) -&gt; void
+doRow(fit.Parse) -&gt; void
+doRows(fit.Parse) -&gt; void
+doTable(fit.Parse) -&gt; void
+doTables(fit.Parse) -&gt; void
+equals(java.lang.Object) -&gt; boolean
+escape(java.lang.String) -&gt; class java.lang.String
+escape(java.lang.String, char, java.lang.String) -&gt; class java.lang.String
+exception(fit.Parse, java.lang.Throwable) -&gt; void
+getArgs() -&gt; class [Ljava.lang.String;
+getArgsForTable(fit.Parse) -&gt; void
+getClass() -&gt; class java.lang.Class
+getSymbol(java.lang.String) -&gt; class java.lang.Object
+gibInEin(java.lang.String, java.lang.String) -&gt; void
+gray(java.lang.String) -&gt; class java.lang.String
+handleBlankCell(fit.Parse, fit.TypeAdapter) -&gt; void
+hasParseMethod(java.lang.Class) -&gt; boolean
+hasSymbol(java.lang.String) -&gt; boolean
+hashCode() -&gt; int
+ignore(fit.Parse) -&gt; void
+isFriendlyException(java.lang.Throwable) -&gt; boolean
+klickDenButton(java.lang.String) -&gt; void
+label(java.lang.String) -&gt; class java.lang.String
+loadFixture(java.lang.String) -&gt; class fit.Fixture
+notify() -&gt; void
+notifyAll() -&gt; void
+open() -&gt; void
+parse(java.lang.String, java.lang.Class) -&gt; class java.lang.Object
+pruefeObTextVorhanden(java.lang.String) -&gt; boolean
+right(fit.Parse) -&gt; void
+setForcedAbort(boolean) -&gt; void
+setSymbol(java.lang.String, java.lang.Object) -&gt; void
+startBrowser(java.lang.String) -&gt; void
+stopBrowser() -&gt; void
+toString() -&gt; class java.lang.String
+wait() -&gt; void
+wait(long) -&gt; void
+wait(long, int) -&gt; void
+wrong(fit.Parse) -&gt; void
+wrong(fit.Parse, java.lang.String) -&gt; void</evaluationMessage>
+        </expectation>
+      </instructionResult>
+      <instructionResult>
+        <instruction>{id='scriptTable_1_4', instruction='call', instanceName='scriptTableActor', methodName='klickAufDenButton', args=[suchen]}</instruction>
+        <slimResult></slimResult>
+        <expectation>
+          <status>error</status>
+          <instructionId>scriptTable_1_4</instructionId>
+          <type>ScriptActionExpectation</type>
+          <evaluationMessage>No Method klickAufDenButton[1] in class org.cc.fitnesse.fixture.web.WebFixture.
+ Available methods:
+ClearSymbols() -&gt; void
+callParseMethod(java.lang.Class, java.lang.String) -&gt; class java.lang.Object
+camel(java.lang.String) -&gt; class java.lang.String
+check(fit.Parse, fit.TypeAdapter) -&gt; void
+counts() -&gt; class java.lang.String
+doCell(fit.Parse, int) -&gt; void
+doCells(fit.Parse) -&gt; void
+doRow(fit.Parse) -&gt; void
+doRows(fit.Parse) -&gt; void
+doTable(fit.Parse) -&gt; void
+doTables(fit.Parse) -&gt; void
+equals(java.lang.Object) -&gt; boolean
+escape(java.lang.String) -&gt; class java.lang.String
+escape(java.lang.String, char, java.lang.String) -&gt; class java.lang.String
+exception(fit.Parse, java.lang.Throwable) -&gt; void
+getArgs() -&gt; class [Ljava.lang.String;
+getArgsForTable(fit.Parse) -&gt; void
+getClass() -&gt; class java.lang.Class
+getSymbol(java.lang.String) -&gt; class java.lang.Object
+gibInEin(java.lang.String, java.lang.String) -&gt; void
+gray(java.lang.String) -&gt; class java.lang.String
+handleBlankCell(fit.Parse, fit.TypeAdapter) -&gt; void
+hasParseMethod(java.lang.Class) -&gt; boolean
+hasSymbol(java.lang.String) -&gt; boolean
+hashCode() -&gt; int
+ignore(fit.Parse) -&gt; void
+isFriendlyException(java.lang.Throwable) -&gt; boolean
+klickDenButton(java.lang.String) -&gt; void
+label(java.lang.String) -&gt; class java.lang.String
+loadFixture(java.lang.String) -&gt; class fit.Fixture
+notify() -&gt; void
+notifyAll() -&gt; void
+open() -&gt; void
+parse(java.lang.String, java.lang.Class) -&gt; class java.lang.Object
+pruefeObTextVorhanden(java.lang.String) -&gt; boolean
+right(fit.Parse) -&gt; void
+setForcedAbort(boolean) -&gt; void
+setSymbol(java.lang.String, java.lang.Object) -&gt; void
+startBrowser(java.lang.String) -&gt; void
+stopBrowser() -&gt; void
+toString() -&gt; class java.lang.String
+wait() -&gt; void
+wait(long) -&gt; void
+wait(long, int) -&gt; void
+wrong(fit.Parse) -&gt; void
+wrong(fit.Parse, java.lang.String) -&gt; void</evaluationMessage>
+        </expectation>
+      </instructionResult>
+      <instructionResult>
+        <instruction>{id='scriptTable_1_5', instruction='call', instanceName='scriptTableActor', methodName='pruefeObAufDerSeiteSteht', args=[Leben und Wirken]}</instruction>
+        <slimResult></slimResult>
+        <expectation>
+          <status>error</status>
+          <instructionId>scriptTable_1_5</instructionId>
+          <type>ScriptActionExpectation</type>
+          <evaluationMessage>No Method pruefeObAufDerSeiteSteht[1] in class org.cc.fitnesse.fixture.web.WebFixture.
+ Available methods:
+ClearSymbols() -&gt; void
+callParseMethod(java.lang.Class, java.lang.String) -&gt; class java.lang.Object
+camel(java.lang.String) -&gt; class java.lang.String
+check(fit.Parse, fit.TypeAdapter) -&gt; void
+counts() -&gt; class java.lang.String
+doCell(fit.Parse, int) -&gt; void
+doCells(fit.Parse) -&gt; void
+doRow(fit.Parse) -&gt; void
+doRows(fit.Parse) -&gt; void
+doTable(fit.Parse) -&gt; void
+doTables(fit.Parse) -&gt; void
+equals(java.lang.Object) -&gt; boolean
+escape(java.lang.String) -&gt; class java.lang.String
+escape(java.lang.String, char, java.lang.String) -&gt; class java.lang.String
+exception(fit.Parse, java.lang.Throwable) -&gt; void
+getArgs() -&gt; class [Ljava.lang.String;
+getArgsForTable(fit.Parse) -&gt; void
+getClass() -&gt; class java.lang.Class
+getSymbol(java.lang.String) -&gt; class java.lang.Object
+gibInEin(java.lang.String, java.lang.String) -&gt; void
+gray(java.lang.String) -&gt; class java.lang.String
+handleBlankCell(fit.Parse, fit.TypeAdapter) -&gt; void
+hasParseMethod(java.lang.Class) -&gt; boolean
+hasSymbol(java.lang.String) -&gt; boolean
+hashCode() -&gt; int
+ignore(fit.Parse) -&gt; void
+isFriendlyException(java.lang.Throwable) -&gt; boolean
+klickDenButton(java.lang.String) -&gt; void
+label(java.lang.String) -&gt; class java.lang.String
+loadFixture(java.lang.String) -&gt; class fit.Fixture
+notify() -&gt; void
+notifyAll() -&gt; void
+open() -&gt; void
+parse(java.lang.String, java.lang.Class) -&gt; class java.lang.Object
+pruefeObTextVorhanden(java.lang.String) -&gt; boolean
+right(fit.Parse) -&gt; void
+setForcedAbort(boolean) -&gt; void
+setSymbol(java.lang.String, java.lang.Object) -&gt; void
+startBrowser(java.lang.String) -&gt; void
+stopBrowser() -&gt; void
+toString() -&gt; class java.lang.String
+wait() -&gt; void
+wait(long) -&gt; void
+wait(long, int) -&gt; void
+wrong(fit.Parse) -&gt; void
+wrong(fit.Parse, java.lang.String) -&gt; void</evaluationMessage>
+        </expectation>
+      </instructionResult>
+      <instructionResult>
+        <instruction>{id='scriptTable_1_6', instruction='call', instanceName='scriptTableActor', methodName='stopBrowser', args=[]}</instruction>
+        <slimResult></slimResult>
+        <expectation>
+          <instructionId>scriptTable_1_6</instructionId>
+          <col>0</col>
+          <row>6</row>
+          <type>ScriptActionExpectation</type>
+        </expectation>
+      </instructionResult>
+    </instructions>
+  </result>
+  <executionLog>
+    <testSystem>slim:fitnesse.slim.SlimService</testSystem>
+    <command>d:\dev\tools\jdk\semeru\jdk-25.0.3+9\bin\java -cp target/classes;d:\dev\projects\fitest\target\lib\asm-7.3.1.jar;d:\dev\projects\fitest\target\lib\asm-analysis-7.3.1.jar;d:\dev\projects\fitest\target\lib\asm-commons-7.3.1.jar;d:\dev\projects\fitest\target\lib\asm-tree-7.3.1.jar;d:\dev\projects\fitest\target\lib\asm-util-7.3.1.jar;d:\dev\projects\fitest\target\lib\auto-service-annotations-1.1.1.jar;d:\dev\projects\fitest\target\lib\byte-buddy-1.18.8-jdk5.jar;d:\dev\projects\fitest\target\lib\commons-lang3-3.20.0.jar;d:\dev\projects\fitest\target\lib\commons-text-1.15.0.jar;d:\dev\projects\fitest\target\lib\diffutils-1.3.0.jar;d:\dev\projects\fitest\target\lib\error_prone_annotations-2.47.0.jar;d:\dev\projects\fitest\target\lib\failureaccess-1.0.3.jar;d:\dev\projects\fitest\target\lib\fitnesse-20260313.jar;d:\dev\projects\fitest\target\lib\groovy-3.0.25.jar;d:\dev\projects\fitest\target\lib\groovy-xml-3.0.25.jar;d:\dev\projects\fitest\target\lib\guava-33.6.0-jre.jar;d:\dev\projects\fitest\target\lib\htmllexer-2.1.jar;d:\dev\projects\fitest\target\lib\htmlparser-2.1.jar;d:\dev\projects\fitest\target\lib\j2objc-annotations-3.1.jar;d:\dev\projects\fitest\target\lib\json-20251224.jar;d:\dev\projects\fitest\target\lib\jspecify-1.0.0.jar;d:\dev\projects\fitest\target\lib\listenablefuture-9999.0-empty-to-avoid-conflict-with-guava.jar;d:\dev\projects\fitest\target\lib\nashorn-core-15.7.jar;d:\dev\projects\fitest\target\lib\opentelemetry-api-1.62.0.jar;d:\dev\projects\fitest\target\lib\opentelemetry-common-1.62.0.jar;d:\dev\projects\fitest\target\lib\opentelemetry-context-1.62.0.jar;d:\dev\projects\fitest\target\lib\opentelemetry-exporter-logging-1.62.0.jar;d:\dev\projects\fitest\target\lib\opentelemetry-sdk-1.62.0.jar;d:\dev\projects\fitest\target\lib\opentelemetry-sdk-common-1.62.0.jar;d:\dev\projects\fitest\target\lib\opentelemetry-sdk-extension-autoconfigure-1.62.0.jar;d:\dev\projects\fitest\target\lib\opentelemetry-sdk-extension-autoconfigure-spi-1.62.0.jar;d:\dev\projects\fitest\target\lib\opentelemetry-sdk-logs-1.62.0.jar;d:\dev\projects\fitest\target\lib\opentelemetry-sdk-metrics-1.62.0.jar;d:\dev\projects\fitest\target\lib\opentelemetry-sdk-trace-1.62.0.jar;d:\dev\projects\fitest\target\lib\selenium-api-4.44.0.jar;d:\dev\projects\fitest\target\lib\selenium-chrome-driver-4.44.0.jar;d:\dev\projects\fitest\target\lib\selenium-chromium-driver-4.44.0.jar;d:\dev\projects\fitest\target\lib\selenium-devtools-v146-4.44.0.jar;d:\dev\projects\fitest\target\lib\selenium-devtools-v147-4.44.0.jar;d:\dev\projects\fitest\target\lib\selenium-devtools-v148-4.44.0.jar;d:\dev\projects\fitest\target\lib\selenium-edge-driver-4.44.0.jar;d:\dev\projects\fitest\target\lib\selenium-firefox-driver-4.44.0.jar;d:\dev\projects\fitest\target\lib\selenium-http-4.44.0.jar;d:\dev\projects\fitest\target\lib\selenium-ie-driver-4.44.0.jar;d:\dev\projects\fitest\target\lib\selenium-java-4.44.0.jar;d:\dev\projects\fitest\target\lib\selenium-json-4.44.0.jar;d:\dev\projects\fitest\target\lib\selenium-manager-4.44.0.jar;d:\dev\projects\fitest\target\lib\selenium-os-4.44.0.jar;d:\dev\projects\fitest\target\lib\selenium-remote-driver-4.44.0.jar;d:\dev\projects\fitest\target\lib\selenium-safari-driver-4.44.0.jar;d:\dev\projects\fitest\target\lib\selenium-support-4.44.0.jar;d:\dev\projects\fitest\target\lib\slf4j-api-2.0.17.jar;d:\dev\projects\fitest\target\lib\slf4j-jdk14-2.0.17.jar;d:\dev\projects\fitest\target\lib\velocity-engine-core-2.4.1.jar;D:\dev\projects\fitest\target\lib\fitnesse-20260313.jar fitnesse.slim.SlimService 1</command>
+    <exitCode>0</exitCode>
+    <stdOut></stdOut>
+    <stdErr></stdErr>
+  </executionLog>
+  <finalCounts>
+    <right>0</right>
+    <wrong>0</wrong>
+    <ignores>0</ignores>
+    <exceptions>1</exceptions>
+  </finalCounts>
+  <totalRunTimeInMillis>4593</totalRunTimeInMillis>
+</testResults>
+
