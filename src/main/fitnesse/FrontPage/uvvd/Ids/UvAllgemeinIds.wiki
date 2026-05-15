@@ -1,0 +1,7 @@
+---
+DisableTestHistory
+RecentChanges: no
+Static
+---
+!define Beruf {gevo-form:j_id_3a:vn-beruf_input}
+!define Stellung {gevo-form:j_id_3a:vn-stellung_input}

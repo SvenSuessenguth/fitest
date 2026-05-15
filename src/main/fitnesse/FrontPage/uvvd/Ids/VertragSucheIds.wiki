@@ -1,0 +1,7 @@
+---
+DisableTestHistory
+RecentChanges: no
+Static
+---
+!define eingabe {vnr-suche-form:vnr-rinr}
+!define suchen {vnr-suche-form:j_id_1x}

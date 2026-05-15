@@ -4,6 +4,7 @@ import java.time.Duration;
 import java.util.regex.Pattern;
 
 import org.openqa.selenium.By;
+import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.edge.EdgeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
@@ -50,11 +51,23 @@ public class WebFixture extends Fixture {
     var element = driver.findElement(By.id(id));
     element.clear();
     element.sendKeys(input);
+    element.sendKeys(Keys.TAB);
+    try {
+      Thread.sleep(5000);
+    } catch (InterruptedException e) {
+      throw new RuntimeException(e);
+    }
   }
 
   public void klick(String id) {
     var element = driver.findElement(By.id(id));
     element.click();
+
+    try {
+      Thread.sleep(5000);
+    } catch (InterruptedException e) {
+      throw new RuntimeException(e);
+    }
 
     var wait = new WebDriverWait(driver, Duration.ofSeconds(20));
     wait.until(ExpectedConditions.elementToBeClickable(By.id("gevo-form")));

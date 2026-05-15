@@ -1,0 +1,6 @@
+---
+DisableTestHistory
+RecentChanges: no
+Static
+---
+!contents -R2 -g -p -f -h
