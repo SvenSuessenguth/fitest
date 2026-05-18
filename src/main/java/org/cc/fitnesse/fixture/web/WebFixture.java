@@ -80,14 +80,17 @@ public class WebFixture extends Fixture {
         return waitForCallback();
     }
 
-    public boolean pruefeObAufSeite(String text) {
-        return driver.getPageSource().contains(text);
-    }
-
-    public boolean pruefeObIn(String selector, String text) {
+    // -----------------------------------------------------------------------------------------------------------------
+    // Prüfungen
+    // -----------------------------------------------------------------------------------------------------------------
+    public boolean pruefeObInSteht(String selector, String text) {
         var element = getElement(selector);
 
         return element.getText().contains(text);
+    }
+
+    public boolean pruefeObAufSeiteSteht(String text) {
+        return driver.getPageSource().contains(text);
     }
 
     WebElement getElement(String selector) {
