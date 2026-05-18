@@ -32,7 +32,7 @@ Test
 !6 UV Allgemein
 !include -c .FrontPage.Uvvd.Ids.UvAllgemeinIds
 | script|
-| pruefe ob | Herr Sepp Blatter | vorhanden |
+| pruefe ob | Herr Sepp Blatter | auf Seite Steht |
 
 !6 UVVD beenden
 | script|
